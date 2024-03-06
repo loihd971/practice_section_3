@@ -1,5 +1,9 @@
 name: flow app
-on: [push, workflow_dispatch]
+# on: [push, workflow_dispatch]
+on:
+  pull_request:
+    types:
+      - opened
 jobs:
   lint:
     runs-on: ubuntu-latest
