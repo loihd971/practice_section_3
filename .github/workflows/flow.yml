@@ -42,3 +42,5 @@ jobs:
         run: npm ci
       - name: Run build command
         run: npm run build
+      - name: log github event
+        run: echo "${{github.event}}"
